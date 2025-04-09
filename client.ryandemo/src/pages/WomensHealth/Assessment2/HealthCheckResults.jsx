@@ -6,7 +6,9 @@ import { healthCheck_result } from "../../../data/DummyData";
 
 import { Questions } from "./HealthCheckQuestions";
 
-const baseUrl = import.meta.env.VITE_API_BASE_URL;
+const baseUrl = "https://ryan-demo-1.onrender.com";
+
+console.log(baseUrl);
 
 const HealthCheckResults = () => {
   const [isResult, setResult] = useState(null);

@@ -4,9 +4,9 @@ import "../../../css/custom.css";
 
 import { Results } from "../../../components/bladderbowel_results/Results";
 
-const baseUrl = import.meta.env.VITE_API_BASE_URL;
+const baseUrl = "https://ryan-demo-1.onrender.com";
 
-console.log(baseUrl)
+console.log(baseUrl);
 
 const BladderBowelResults = () => {
 
