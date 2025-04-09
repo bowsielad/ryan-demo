@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.UseUrls("http://*:80");
+
 // Register HttpClient
 builder.Services.AddHttpClient();
 builder.Services.AddLogging();
@@ -36,6 +38,8 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
+app.UseHttpsRedirection();
+
 app.UseRouting();
 
 app.UseCors("MyPolicy");
@@ -45,5 +49,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 // Use dynamic port binding
-app.Run($"http://0.0.0.0:{Environment.GetEnvironmentVariable("PORT") ?? "8080"}");
+app.Run();
 
