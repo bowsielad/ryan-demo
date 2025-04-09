@@ -11,17 +11,18 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Copy and restore dependencies
-COPY server.ryandemo.csproj ./
-RUN dotnet restore ./server.ryandemo.csproj
+COPY ["server.ryandemo.csproj", "."]
+RUN dotnet restore "./server.ryandemo.csproj"
 
-# Copy everything else and build
-COPY . ./
-RUN dotnet build ./server.ryandemo.csproj -c $BUILD_CONFIGURATION -o /app/build
+# Copy all source files and build
+COPY . .
+WORKDIR "/src/."
+RUN dotnet build "./server.ryandemo.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Publish stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish ./server.ryandemo.csproj -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./server.ryandemo.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # Final runtime image
 FROM base AS final
@@ -30,7 +31,9 @@ COPY --from=publish /app/publish .
 
 USER root
 
-# Puppeteer setup
+#####################
+# PUPPETEER SETUP
+#####################
 RUN apt-get update \
     && apt-get install -y wget gnupg \
     && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /usr/share/keyrings/googlechrome-linux-keyring.gpg \
@@ -41,10 +44,11 @@ RUN apt-get update \
     && service dbus start \
     && rm -rf /var/lib/apt/lists/*
 
-ENV PUPPETEER_EXECUTABLE_PATH="/usr/bin/google-chrome-stable"
+# Set Puppeteer Chrome path
+ENV PUPPETEER_EXECUTABLE_PATH "/usr/bin/google-chrome-stable"
+
 ENV ASPNETCORE_ENVIRONMENT=Production
 
 USER app
 ENTRYPOINT ["dotnet", "server.ryandemo.dll"]
-
 
