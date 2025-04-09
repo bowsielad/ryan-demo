@@ -1,0 +1,67 @@
+/*
+=============== 
+radio button
+===============
+*/
+.reflection-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.reflection-Container p {
+  margin: 0;
+  padding:0;
+  white-space: normal;
+}
+.reflectionTag{
+  background-color: #ECFDF3; 
+  color:#027A48;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: left;
+  padding: 4px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  width: 25%;
+}
+
+.reflection-Action button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #00568B;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #00568B;
+  border-radius: 4px;
+  
+}
+
+.reflection-Title {
+  padding: 0px;
+  margin: 0px;
+}
+
+.reflection-Action {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+ 
+}
+
+

@@ -1,0 +1,6 @@
+@server.ryandemo_HostAddress = http://localhost:5177
+
+GET {{server.ryandemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

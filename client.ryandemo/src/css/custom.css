@@ -1,0 +1,938 @@
+/*
+=============== 
+Navbar
+===============
+*/
+
+.navigation {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: auto;
+  justify-content: space-between;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0;
+  background-color: #fff;
+  color: black;
+  border-bottom: solid 1px #e3e3e3;
+  z-index: 2;
+}
+.brand-name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+.navigation-menu {
+  margin-left: auto;
+}
+.navigation-menuleft {
+  margin-left: 0;
+  text-align: center;
+}
+.navigation-menuright {
+  display: flex; 
+  justify-content: end; /* Centers content */
+  align-items: center; /* Aligns vertically */
+  width: 100%; /* Ensures it spans full width */
+  margin: 0 auto;
+  margin-right: 10px;
+}
+
+nav svg {
+  width: 40px;
+  color: #ffffff;
+}
+
+.homeIcon{
+  width: 40px;
+  margin:0;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  border-top: solid 1px #e3e3e3;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/*
+=============== 
+ section / article
+===============
+*/
+main {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  color: #2c292b;
+  overflow-y: auto;
+}
+
+article{
+  max-width: 1280px;
+  width:1000px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+}
+.Btn2 {
+  text-align: left;
+}
+
+.Btn2 button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  color: #2c292b;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+}
+.Btn3 {
+  text-align: left;
+}
+
+.Btn3 button {
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  color: #2c292b;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+/*
+=============== 
+bottom nav and pagination
+===============
+*/
+
+.bottomNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
+  margin: 0px 0px 40px 0px;
+  width: auto;
+}
+
+/* Pagination container styling */
+.pagination {
+  display: flex;
+  gap: 5px;
+}
+
+/* Base style for pagination buttons */
+.page-link,
+.page-item {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.page-link:hover,
+.page-item:hover {
+  background-color: #ddd;
+}
+
+/* Active page styling */
+.page-item.active {
+  background-color: #00568B;
+  color: #fff;
+  font-weight: bold;
+  border-color: #00568B;
+}
+
+/* Disabled button styling */
+.page-link:disabled {
+  background-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
+
+/*
+=============== 
+landing pg widget
+===============
+*/
+
+.landpgWidgets {
+  display: flex;
+  gap: 8px;
+  padding: 0px;
+  width: 680px;
+}
+
+.widgetWrapper {
+  border: .5px solid rgb(143, 143, 143);
+  border-radius: 4px;
+  padding: 20px 20px;
+  width: 24%;
+}
+
+.widgetContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.widgetCardRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes items apart */
+  align-items: flex-start; /* Align text and link to the left */
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  min-height: 100px; /* Adjust as needed */
+}
+.widgetCardRight{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes items apart */
+  align-items: flex-start; /* Align text and link to the left */
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  min-height: 100px; /* Adjust as needed */
+}
+.widget-header {
+  margin: 0 0 20px 0;
+  width: 100%;
+  padding: 0px;
+}
+
+.widget-space {
+  margin: 20px 0 20px 0;
+  width: 100%;
+  padding: 0px;
+  text-align: left;
+}
+.widget-space button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #00568B;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #00568B;
+  border-radius: 4px;
+  width: 200px;
+  
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2c292b;
+  margin:0;
+  padding: 0;
+  text-align: left;
+  }
+h2 {
+  font-size: 1.5rem;
+  color: #2c292b;
+  margin:10px 0 10px 0;
+  padding: 0;
+  text-align: left;
+  }
+
+h3 {
+  text-align: left;
+  margin:0;
+  color: #2c292b;
+}
+h4 {
+  text-align: left;
+  margin: 0;
+  color: #2c292b;
+}
+
+p{
+  font-size: 14px;
+  text-align: left;
+  margin: 10px 0 10px 0;
+  color: #2c292b;
+}
+
+/*
+=============== 
+Form
+===============
+*/
+
+form {
+  max-width: 1280px;
+  width:600px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+  background-color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+.page-header {
+  margin: 20px 0 10px 0;
+  width: 100%;
+  padding: 0px;
+  text-align: left;
+}
+
+.page-space {
+  margin: 20px 0 20px 0;
+  width: 100%;
+  padding: 0px;
+}
+
+.actions {
+  text-align: left;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #00568B;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #00568B;
+  border-radius: 4px;
+  
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #9EE2FF;
+  border-color: #9EE2FF;
+}
+
+.input_container {
+  border: .5px solid rgb(143, 143, 143);
+}
+
+.control {
+  margin-bottom: 1rem;
+  border: .5px solid rgb(143, 143, 143);
+  border-radius: 4px;
+  width: auto;
+  padding: 20px;
+}
+
+.control label {
+  display: block;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.control input,
+.control textarea {
+  font-size: 14px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 300px;
+  border: .5px solid rgb(143, 143, 143);
+  border-radius: 5px;
+  background-color: #fff;
+}
+.radioControl {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.radioControl input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #007bff; 
+  cursor: pointer;
+}
+.radioControl label {
+  display: flex; 
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.text-input {
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+.text-input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.text-input textarea {
+  width: 95%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font: inherit;
+  background-color: #fff;
+}
+.text-input textarea::placeholder {
+  color: #aaa; 
+  font-style: italic; 
+  opacity: 0.8; 
+  background-color: #fff;
+}
+
+/*
+=============== 
+result
+===============
+*/
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 140px;
+  padding: 0 20px 40px 20px;
+}
+.table-container {
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.pdf-content {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.responsive-table {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.static-column {
+  background-color: #f1f1f1;
+  border-right: 1px solid #ddd;
+  padding: 5px;
+  position: sticky; /* Makes the first column static */
+  left: 0;
+  z-index: 1; /* Ensures it stays above the scrollable content */
+  width: 175px;
+}
+
+.scrollable-columns {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  display: flex;
+  width: 100%;
+}
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+.scrollable-columns::-webkit-scrollbar {
+  height: 8px; /* Sets the height of the scrollbar */
+}
+
+.scrollable-columns::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.scrollable-columns::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded edges for the scrollbar thumb */
+}
+
+.scrollable-columns::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px; /* Adjust as needed for column width */
+  padding: 5px;
+  border-right: 1px solid #ddd;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Specific styling for urine_reason and stool_reason rows in both static and scrollable columns */
+.static-column .row.multi-line-static,
+.scrollable-columns .row.multi-line-static {
+  min-height: 80px; /* Adjust height for urine_reason and stool_reason rows */
+}
+
+/* Default styling for rows in the static and scrollable columns */
+.static-column .row,
+.scrollable-columns .row {
+  padding: 10px 5px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Styling for the key text in static column */
+.key {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: left;
+}
+.key-value {
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+/*
+=============== 
+results
+===============
+*/
+
+.qa-table {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 1000px;
+  background-color: #fff;
+}
+.qa-row {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.qa-row:last-child {
+  border-bottom: none;
+}
+
+.qa-question {
+  flex-basis: 100%;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.qa-answer {
+  flex-basis: 100%;
+  text-align: left;
+}
+.text-value {
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+}
+
+.multi-value {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.multi-value span {
+  padding: 5px 12px;
+  background-color: #e6f7ff;
+  border-radius: 4px;
+  color: #007acc;
+  font-size: 14px;
+}
+
+
+/*
+=============== 
+cards
+===============
+*/
+
+.card-Container {
+  max-width: 800px;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+}
+.card-List {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  padding:0;
+  margin: 10px auto;
+  white-space: nowrap;
+  -webkit-scrollbar {
+    height: 8px; /* Sets the height of the scrollbar */
+  }
+  scrollbar-width: auto; /* For Firefox */
+}
+.card-Box {
+  min-width: 300px;
+  padding: 16px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: left;
+  height: 60vh;
+  overflow-y: auto;
+  
+}
+.card-Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
+  margin: 0px 0px 8px 0px;
+  width: auto;
+}
+
+.reflectionBadge {
+display: flex;
+padding: 4px 16px;
+align-items: center;
+border-radius: 16px;
+background-color: #FFF4ED;
+mix-blend-mode: multiply;
+}
+/*
+=============== 
+Sidebar
+===============
+*/
+.sidebar {
+  display: flex;
+  align-items: stretch;
+}
+
+.sidebarOpen {
+  width: 420px;
+  background-color: #f7f7f7;
+  border-right: solid 1px #e3e3e3;
+  color: #3992ff;
+  height: 100vh;
+  transition: width 0.5s ease;
+}
+
+.sidebarClosed {
+  width: 60px;
+  background-color: #f7f7f7;
+  border-right: solid 1px #e3e3e3;
+  color: #3992ff;
+  height: 100vh;
+  transition: width 0.5s ease;
+}
+.sidebar_header {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: left;
+}
+
+.sidebar_logo {
+  flex-grow: 0;
+  margin-right: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.iconArrow {
+  color: #3992ff;
+  width: 20px;
+  flex-grow: 0;
+}
+.sidebar_bars{
+  display: flex;
+  font-size: 25px;
+}
+.sidebar_icon{
+  font-size: 14px;
+  color: #3992ff;
+  width:20px;
+}
+
+/*
+=============== 
+Print
+===============
+*/
+
+@media print {
+  .print-scale {
+    transform: scale(0.6); /* Scale the content down */
+    transform-origin: top left;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navigation, .sidebar, .footer, nav {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin:10px 0 10px 0;
+  }
+ 
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  main {
+    display: block !important;
+    position: static !important;
+    height: auto !important;
+  }
+  section{
+    background-color: #fff;
+  }
+  
+/*
+=============== 
+assessment
+===============
+*/
+
+.pdf-content {
+  width: 100% !important;
+  max-width: 550pt !important; /* Fit within A4 width */
+  display: block !important;
+  margin: 0 auto;
+}
+.result-container {
+  width: 100% !important;
+  max-width: 550pt !important; /* Fit within A4 width */
+  display: block !important;
+  margin: 0 auto;
+}
+.page-header {
+  margin: 10px 0;
+}
+
+/*
+=============== 
+assessment1
+===============
+*/
+
+.qa-table {
+  width: 100% !important;
+  max-width: 550pt !important;
+  table-layout: fixed !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  margin: 0;
+  padding: 0;
+  font-size: 9pt; /* Reduce font size instead of scaling */
+  border: 0px solid #ddd;
+  border-radius: 0;
+}
+
+.qa-question, .qa-answer {
+  font-size: 10px !important; /* Adjust for print */
+}
+.multi-value span {
+  font-size: 10px;
+}
+.text-value {
+  font-size: 10px;
+}
+
+/*
+=============== 
+assessment2
+===============
+*/
+
+
+/* Ensure each page starts on a new page */
+.pageBreak {
+  page-break-before: always !important; /* Standard */
+  break-before: page !important; /* Modern */
+  display: block !important;
+  width: 100% !important;
+  min-height: 100vh !important; /* Ensure each section fills a full page */
+}
+
+/* Prevent page breaks inside a result section */
+.avoid {
+  page-break-inside: avoid !important;
+}
+
+.table-container {
+  width: 100% !important;
+  max-width: 612pt !important; /* Ensure it fits within A4 width */
+  font-size: 9pt !important; /* Reduce font size */
+  page-break-inside: avoid !important;
+}
+
+.responsive-table {
+  display: grid !important;
+  grid-template-columns: 110px auto; /* Adjust for static + scrollable columns */
+  border: 1px solid #ddd !important;
+  overflow: hidden !important;
+}
+
+.static-column {
+  width: 100px !important;
+  max-width: 100px !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.scrollable-columns {
+  display: flex !important;
+  flex-wrap: nowrap !important; /* Prevents wrapping */
+  overflow: hidden !important;
+}
+
+.scroll-content {
+  flex: 1 1 auto !important;
+  min-width: 80px !important;
+  max-width: 95px !important; /* Ensures each column fits */
+  word-wrap: break-word !important;
+}
+
+.row {
+  padding: 3px 5px !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.key {
+  font-weight: bold;
+  font-size: 9px;
+  display: block;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: left;
+}
+.key-value {
+  text-align: left;
+  font-size: 9px;
+  color: #555;
+}
+
+}
+
+/*
+=============== 
+Responsive
+===============
+*/
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  section{
+    background-color: #fff;
+  }
+  article{
+    width:96%;
+    padding: 10px 0;
+  }
+  
+  .result-container {
+    width: 90%;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+  .key {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .value {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .row {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+
