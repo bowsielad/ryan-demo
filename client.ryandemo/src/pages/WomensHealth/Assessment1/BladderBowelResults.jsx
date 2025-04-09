@@ -6,6 +6,8 @@ import { Results } from "../../../components/bladderbowel_results/Results";
 
 const baseUrl = import.meta.env.VITE_API_BASE_URL;
 
+console.log(import.meta.env.VITE_API_BASE_URL)
+
 const BladderBowelResults = () => {
 
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ const BladderBowelResults = () => {
   const handleDownload = async () => {
     const pageUrl = "bladderbowelresults";
     try {
-      const response = await fetch(`${baseUrl}/api/pdfgenerator/generate-report?pageUrl=${pageUrl}`, {
+      const response = await fetch(`https://ryan-demo-1.onrender.com/api/pdfgenerator/generate-report?pageUrl=${pageUrl}`, {
         method: "GET",
       });
 
