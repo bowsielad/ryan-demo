@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: ./server.ryandemo
+      dockerfile: Dockerfile
+    ports:
+      - "5050:8080"
+      - "5051:8081"
+    environment:
+      - PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./client.ryandemo
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
