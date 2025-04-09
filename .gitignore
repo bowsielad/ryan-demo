@@ -29,9 +29,9 @@ server.ryandemo/obj/
 server.ryandemo/bin/Debug/net9.0/.local-chromium/
 
 # Docker-related files
-.docker
-Dockerfile*
-docker-compose.yml
+#.docker         <- keep ignored if it's just local scripts/configs
+# Dockerfile     <- must be tracked!
+# docker-compose.yml <- must be tracked if used by Render or others
 
 # Environment files
 .env
