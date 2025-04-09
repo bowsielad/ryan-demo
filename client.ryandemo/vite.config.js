@@ -7,6 +7,6 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 5173,
-    allowedHosts: ["host.docker.internal", "ryan-demo-bmza.onrender.com"], // because my backend needs to call my vite app should this be included when i have it up and running in render?
+    allowedHosts: ["host.docker.internal", "ryan-demo-thvs.onrender.com"], // because my backend needs to call my vite app should this be included when i have it up and running in render?
   },
 });

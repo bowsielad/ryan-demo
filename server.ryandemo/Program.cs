@@ -24,7 +24,7 @@ builder.Services.AddCors(options =>
             .WithOrigins(
                 "http://localhost:5173", // local dev (Vite)
                 "http://host.docker.internal:5173", // docker
-                "https://ryan-demo-bmza.onrender.com" // deployed frontend
+                "https://ryan-demo-thvs.onrender.com" // deployed frontend
             ) 
             .WithMethods("GET", "POST", "DELETE", "HEAD", "OPTIONS")
             .WithHeaders("Origin", "Accept", "Access", "Content-Type", "Authorization", "X-Requested-With")
