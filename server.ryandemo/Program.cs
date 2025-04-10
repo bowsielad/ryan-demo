@@ -1,7 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-builder.WebHost.UseUrls($"http://*:{port}");
 
 // Register HttpClient
 builder.Services.AddHttpClient();
