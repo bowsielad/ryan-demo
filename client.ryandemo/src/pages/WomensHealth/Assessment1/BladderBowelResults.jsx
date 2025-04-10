@@ -5,6 +5,7 @@ import "../../../css/custom.css";
 import { Results } from "../../../components/bladderbowel_results/Results";
 
 const baseUrl = "https://ryan-demo-1.onrender.com";
+const localUrl = "http://localhost:5177";
 
 console.log(baseUrl);
 
