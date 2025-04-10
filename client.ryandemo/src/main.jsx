@@ -6,8 +6,8 @@ import "./index.css"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Home from "./pages/Home.jsx"
 import Contact from "./pages/Contact.jsx"
-import ProfilesPage from "./pages/ProfilesPage"
-import ProfilePage from "./pages/ProfilePage"
+import ProfilesPage from "./pages/MentalHealthResults/ProfilesPage"
+import ProfilePage from "./pages/MentalHealthResults/ProfilePage"
 import NotFoundPage from "./pages/NotFoundPage"
 
 import WomensHealthAssessment from "./pages/WomensHealth/WomensHealthAssessment";

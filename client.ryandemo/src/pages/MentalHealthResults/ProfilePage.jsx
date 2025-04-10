@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import DataContext from "../context/DataContext"
+import DataContext from "../../context/DataContext"
 
 import { useParams } from "react-router-dom"
 export default function ProfilePage() {

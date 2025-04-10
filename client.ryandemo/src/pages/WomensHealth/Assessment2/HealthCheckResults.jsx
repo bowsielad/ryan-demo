@@ -9,8 +9,6 @@ import { Questions } from "./HealthCheckQuestions";
 const baseUrl = "https://ryan-demo-1.onrender.com";
 const localUrl = "http://localhost:5177";
 
-console.log(baseUrl);
-
 const HealthCheckResults = () => {
   const [isResult, setResult] = useState(null);
 

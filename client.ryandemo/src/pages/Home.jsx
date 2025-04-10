@@ -1,16 +1,39 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/custom.css";
 
 
 export default function Home() {
+  const [message, setMessage] = useState("");
+
+  const baseUrl = "https://ryan-demo-1.onrender.com";
+  const localUrl = "http://localhost:5177";
+
+  useEffect(() => {
+    const fetchWelcome = async () => {
+      try {
+        const response = await fetch(`${baseUrl}/api/home/welcome`);
+        const text = await response.text(); // Because it's a plain string, not JSON
+        setMessage(text);
+      } catch (error) {
+        console.error("Error fetching welcome message:", error);
+      }
+    };
+
+    fetchWelcome();
+  }, []);
+
+
   return (
     <section>
       <article>
            <div className="widget-space">
              <h2>Testing Area</h2>
-             <p>Select any feature to test!</p>
+             <p><strong>A/B testing</strong></p>
+             <p>In A/B tests, two items or variations are compared to one another to see which performs better.</p>
+             <p><strong>Fake door testing</strong></p>
              <p>Fake door testing is slightly different from the typical A/B tests but can also be considered a subset of it. The difference is that you’re not comparing two variations - you just want to test a new feature before rolling it out.</p>
-     
+             <p>Select any feature to test!</p>
              <br />
              <Link to="/womenshealthassessment" >womens health assessments <span>&#8594;</span></Link>
      
@@ -28,6 +51,7 @@ export default function Home() {
      
              <br />
              <br />
+             <p style={{ fontSize: "12px"}}>{message}</p>
 
              
            </div>
