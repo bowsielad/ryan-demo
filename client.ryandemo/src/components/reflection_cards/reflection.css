@@ -52,6 +52,14 @@ radio button
   margin: 0px;
 }
 
+.complete-Btn{
+  background-color: #00568B;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #00568B;
+  border-radius: 4px;
+}
+
 
 
 @media (max-width: 900px) {

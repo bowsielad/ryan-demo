@@ -3,10 +3,10 @@ import "../../css/custom.css";
 
 export const BladderBowelWigetComplete = () => {
   return (
-    <div className="widgetWrapper">
+    <div className="widget-wrapper">
       <h3>Dairy 1</h3>
 
-      <div className="widgetContainer">
+      <div className="widget-box-container">
         <div className="widgetCardRight">
           <p>[date] : Completed</p>
 
@@ -19,10 +19,10 @@ export const BladderBowelWigetComplete = () => {
 
 export const BladderBowelWigetInprogress = () => {
   return (
-    <div className="widgetWrapper">
+    <div className="widget-wrapper">
       <h3>Dairy 2</h3>
 
-      <div className="widgetContainer">
+      <div className="widget-box-container">
         <div className="widgetCardRight">
         <div>
           <p>[date] : In-Progress</p>
@@ -38,10 +38,10 @@ export const BladderBowelWigetInprogress = () => {
 
 export const HealthCheckListWigetComplete = () => {
   return (
-    <div className="widgetWrapper">
+    <div className="widget-wrapper">
       <h3>Check List 1</h3>
 
-      <div className="widgetContainer">
+      <div className="widget-box-container">
         <div className="widgetCardRight">
           <p>[date] : Completed</p>
 
@@ -54,10 +54,10 @@ export const HealthCheckListWigetComplete = () => {
 
 export const HealthCheckListWidgetInprogress = () => {
   return (
-    <div className="widgetWrapper">
+    <div className="widget-wrapper">
       <h3>Check List 2</h3>
 
-      <div className="widgetContainer">
+      <div className="widget-box-container">
         <div className="widgetCardRight">
           <p>[date] : In-Progress</p>
 

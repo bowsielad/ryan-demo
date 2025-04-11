@@ -14,7 +14,7 @@ export const Card7 = ({ onResponse }) => {
       <h4>Congrats! You are done.</h4>
       <p>View your results</p>
       <button
-        className="cardBtn" onClick={() => handleCardClick("complete")}
+        className="complete-Btn" onClick={() => handleCardClick("complete")}
       >
         Finish
       </button>

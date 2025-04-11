@@ -9,12 +9,14 @@ const localUrl = "http://localhost:5177";
 
 
 const BladderBowelResults = () => {
+  const [isSelected, setSelected] = useState(true);
 
   const navigate = useNavigate();
   const goBack = () => navigate(-1);
 
   const handleDownload = async () => {
     const pageUrl = "bladderbowelresults";
+    setSelected(false);
     try {
       const response = await fetch(`${baseUrl}/api/pdfgenerator/generate-report?pageUrl=${pageUrl}`, {
         method: "GET",
@@ -37,6 +39,8 @@ const BladderBowelResults = () => {
 
       // Cleanup the link
       link.parentNode.removeChild(link);
+
+      setSelected(true);
     } catch (error) {
       console.error("Error downloading the PDF:", error);
     }
@@ -72,7 +76,7 @@ const BladderBowelResults = () => {
       <div className="page-header">
         <nav>
           <div className="actions">
-            <button onClick={handleDownload}> Print </button>
+            <button onClick={handleDownload}>{isSelected ? "Print" : "Downloading"}</button>
             <p>Printing available on Chrome desktop.</p>
           </div>
         </nav>

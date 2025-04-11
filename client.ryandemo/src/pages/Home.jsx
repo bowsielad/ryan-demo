@@ -35,19 +35,19 @@ export default function Home() {
              <p>Fake door testing is slightly different from the typical A/B tests but can also be considered a subset of it. The difference is that you’re not comparing two variations - you just want to test a new feature before rolling it out.</p>
              <p>Select any feature to test!</p>
              <br />
-             <Link to="/womenshealthassessment" >womens health assessments <span>&#8594;</span></Link>
+             <Link to="/womenshealthassessment" >womens health assessments <span className="font-link">&#8594;</span></Link>
      
              <br />
              <br />
-             <Link to="/lifestylehabits" >lifestyle habits <span>&#8594;</span></Link>
+             <Link to="/lifestylehabits" >lifestyle habits <span className="font-link">&#8594;</span></Link>
 
              <br />
              <br />
-             <Link to="/dailyreflections" >daily reflections <span>&#8594;</span></Link>
+             <Link to="/dailyreflections" >daily reflections <span className="font-link">&#8594;</span></Link>
      
              <br />
              <br />
-             <Link to="/dashboard" >my day dashboard <span>&#8594;</span></Link>
+             <Link to="/dashboard" >my day dashboard <span className="font-link">&#8594;</span></Link>
      
              <br />
              <br />

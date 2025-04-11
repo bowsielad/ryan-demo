@@ -21,13 +21,13 @@ function WomensHealthAssessment() {
 
   return (
     <section>
-      <article>
+      <div className="landpg-widgets-container">
         <br />
         <div className="widget-header">
           <h2>Bladder and Bowel Diary</h2>
         </div>
 
-        <div className="landpgWidgets">
+        <div className="landpg-widgets">
           <BladderBowelWigetComplete />
           <BladderBowelWigetInprogress />
         </div>
@@ -46,7 +46,7 @@ function WomensHealthAssessment() {
           <h2>Womens Health Check List</h2>
         </div>
 
-        <div className="landpgWidgets">
+        <div className="landpg-widgets">
           <HealthCheckListWigetComplete />
           <HealthCheckListWidgetInprogress />
         </div>
@@ -58,7 +58,11 @@ function WomensHealthAssessment() {
             </button>
           </div>
         </div>
-      </article>
+
+        <br />
+
+
+      </div>
     </section>
   );
 }

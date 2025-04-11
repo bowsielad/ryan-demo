@@ -11,7 +11,7 @@ const localUrl = "http://localhost:5177";
 
 const HealthCheckResults = () => {
   const [isResult, setResult] = useState(null);
-
+const [isSelected, setSelected] = useState(true);
 
   useEffect(() => {
     if (!healthCheck_result) {
@@ -28,6 +28,7 @@ const HealthCheckResults = () => {
 
   const handleDownload = async () => {
     const pageUrl = "healthcheckresults";
+    setSelected(false);
     try {
       const response = await fetch(`${baseUrl}/api/pdfgenerator/generate-report?pageUrl=${pageUrl}`, {
         method: "GET",
@@ -50,6 +51,7 @@ const HealthCheckResults = () => {
 
       // Cleanup the link
       link.parentNode.removeChild(link);
+      setSelected(true);
     } catch (error) {
       console.error("Error downloading the PDF:", error);
     }
@@ -113,7 +115,7 @@ const HealthCheckResults = () => {
       <div className="page-header">
         <nav>
         <div className="actions">
-        <button onClick={handleDownload}> Print </button>
+        <button onClick={handleDownload}>{isSelected ? "Print" : "Downloading"}</button>
         <p>Printing available on Chrome desktop.</p>
         </div>
         </nav>

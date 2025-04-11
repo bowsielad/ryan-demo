@@ -83,16 +83,12 @@ export const ArrowLeft = ({ onClick }) => {
         xmlns="http://www.w3.org/2000/svg"
         fill="#fff"
         viewBox="0 0 24 24"
-        strokeWidth={2}
+        strokeWidth={1}
         stroke="#fff"
         width="30"
         height="30"
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
-        />
+        <polygon points="15.29 3.29 6.59 12 15.29 20.71 16.71 19.29 9.41 12 16.71 4.71 15.29 3.29"/>
       </svg>
     </div>
   );
@@ -120,16 +116,12 @@ export const ArrowRight = ({ onClick }) => {
         xmlns="http://www.w3.org/2000/svg"
         fill="#fff"
         viewBox="0 0 24 24"
-        strokeWidth={2}
+        strokeWidth={1}
         stroke="#fff"
         width="30"
         height="30"
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M4.5 12h15m0 0l-6.75 6.75M19.5 12l-6.75-6.75"
-        />
+        <polygon points="7.29 4.71 14.59 12 7.29 19.29 8.71 20.71 17.41 12 8.71 3.29 7.29 4.71"/>
       </svg>
     </div>
   );

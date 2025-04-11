@@ -37,7 +37,7 @@ export const QuickLink1 = () => {
 
        <div className="quicklink-action">
           <p>Make a Journal Entry</p>
-          <Link to="/" className="quicklink-link">Take me there <span>&#8594;</span></Link>
+          <Link to="/" className="quicklink-link">Take me there <span className="font-link">&#8594;</span></Link>
         </div>
         
       

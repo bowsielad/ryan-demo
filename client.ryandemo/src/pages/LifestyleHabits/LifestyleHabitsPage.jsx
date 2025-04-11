@@ -139,7 +139,7 @@ const ArrowLeft = ({ onClick }) => (
       borderRadius: "5px",
     }}
   >
-    <span>&#8592;</span>
+    <span className="font-link">&#8592;</span>
   </button>
 );
 
@@ -155,7 +155,7 @@ const ArrowRight = ({ onClick }) => (
       borderRadius: "5px",
     }}
   >
-    <span>&#8594;</span>
+    <span className="font-link">&#8594;</span>
   </button>
 );
 

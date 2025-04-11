@@ -9,7 +9,7 @@ namespace YourAppNamespace.Controllers
         [HttpGet("welcome")]
         public IActionResult GetWelcome()
         {
-            return Ok("Welcome to the backend API!");
+            return Ok("Running the backend API!");
         }
     }
 }

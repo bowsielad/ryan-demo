@@ -1,4 +1,4 @@
-const bb_result = {
+const bladderbowel_result = {
   date: "2025-01-07",
   day: "day1",
   time: "11:00 AM",
@@ -15,7 +15,7 @@ const bb_result = {
   pad_number: "4",
   pad_style: "test",
 };
-export { bb_result };
+export { bladderbowel_result };
 
 const healthCheck_result = {
   leakage_awareness: ["urine"],

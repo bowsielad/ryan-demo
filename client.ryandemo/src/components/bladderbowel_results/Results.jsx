@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from "react";
 import "../../css/custom.css";
 
-import { bb_result } from "../../data/DummyData";
+import { bladderbowel_result } from "../../data/DummyData";
 
 export const Results = () => {
   const [isResult, setResult] = useState(null);
   
     useEffect(() => {
-      if (!bb_result) {
+      if (!bladderbowel_result) {
         console.log("this is an error");
       } else {
         const mockResults = [
-          { ...bb_result, time: "9:00 AM" },
-          { ...bb_result, time: "12:00 PM" },
-          { ...bb_result, time: "3:00 PM" },
-          { ...bb_result, time: "5:00 PM" },
-          { ...bb_result, time: "6:00 PM" },
-          { ...bb_result, time: "10:00 PM" },
+          { ...bladderbowel_result, time: "9:00 AM" },
+          { ...bladderbowel_result, time: "12:00 PM" },
+          { ...bladderbowel_result, time: "3:00 PM" },
+          { ...bladderbowel_result, time: "5:00 PM" },
+          { ...bladderbowel_result, time: "6:00 PM" },
+          { ...bladderbowel_result, time: "10:00 PM" },
         ];
         //console.log(mockResults);
         setResult(mockResults);
       }
-    }, [bb_result]);
+    }, [bladderbowel_result]);
     
   
     return (

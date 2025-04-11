@@ -90,7 +90,7 @@ export default function DailyReflectionPage() {
         <div className="Btn2">
            <button >Turn Tracking Off</button>
          </div>
-         <div className="reflectionBadge">[XX-XXX-2025]</div>
+         <div className="card-Date">[XX-XXX-2025]</div>
        </div>    
 
 
@@ -99,14 +99,16 @@ export default function DailyReflectionPage() {
             ref={scrollableRef}
             className="card-List"
           >
-            {cardList.map(({ id, Component }) => (
+            {cardList.map(({ id, Component }, index) => (
             <div key={id} className="card-Box">
               
               <Component onResponse={handleResponse} />
               
-              <div className="Btn3">
+              {index < cardList.length - 1 && (
+                <div className="Btn3">
                 <button onClick={() => onScroll(340)}>Scroll Next</button>
               </div>
+              )}
                 
             </div>
             ))}
@@ -144,7 +146,7 @@ const ArrowLeft = ({ onClick }) => (
       borderRadius: "5px",
     }}
   >
-    <span>&#8592;</span>
+    <span className="font-link">&#8592;</span>
   </button>
 );
 
@@ -160,7 +162,7 @@ const ArrowRight = ({ onClick }) => (
       borderRadius: "5px",
     }}
   >
-    <span>&#8594;</span>
+    <span className="font-link">&#8594;</span>
   </button>
 );
 

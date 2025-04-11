@@ -103,9 +103,6 @@ article{
   background-color: #fff;
   padding: 20px;
 }
-.Btn2 {
-  text-align: left;
-}
 
 .Btn2 button {
   font: inherit;
@@ -116,10 +113,6 @@ article{
   border: 1px solid #f7f7f7;
   border-radius: 4px;
 }
-.Btn3 {
-  text-align: left;
-}
-
 .Btn3 button {
   font-size: 12px;
   cursor: pointer;
@@ -129,6 +122,11 @@ article{
   border: 1px solid #f7f7f7;
   border-radius: 4px;
   margin: 20px 0;
+}
+
+.font-link {
+  font-family: 'Roboto';
+  font-weight: 900;
 }
 
 /*
@@ -192,22 +190,33 @@ bottom nav and pagination
 landing pg widget
 ===============
 */
+.landpg-widgets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 140px;
+  padding: 0 20px 40px 20px;
+}
 
-.landpgWidgets {
+.landpg-widgets {
   display: flex;
   gap: 8px;
   padding: 0px;
-  width: 680px;
+  width: 100%;
 }
 
-.widgetWrapper {
+.widget-wrapper {
   border: .5px solid rgb(143, 143, 143);
   border-radius: 4px;
   padding: 20px 20px;
   width: 24%;
 }
 
-.widgetContainer {
+.widget-box-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -337,7 +346,6 @@ form {
   padding: 0.5rem 1.5rem;
   border: 1px solid #00568B;
   border-radius: 4px;
-  
 }
 
 .actions button:hover,
@@ -654,7 +662,7 @@ cards
   width: auto;
 }
 
-.reflectionBadge {
+.card-Date {
 display: flex;
 padding: 4px 16px;
 align-items: center;
@@ -932,6 +940,20 @@ Responsive
 
   .sidebar {
     display: none;
+  }
+
+
+  .landpg-widgets-container {
+    width: 90%;
+    padding: 0;
+  }
+  .widget-wrapper {
+    width: 48%;
+  }
+  form {
+    width:90%;
+    padding: 0;
+
   }
 }
 
