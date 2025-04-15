@@ -1,4 +1,3 @@
-import { DataProvider } from "./context/DataContext"
 import { Outlet } from "react-router-dom"
 
 import "./App.css";
@@ -10,7 +9,6 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <>
-      <DataProvider>
         <Header />
         
         <main>
@@ -19,7 +17,6 @@ function App() {
         </main>
 
         <Footer/>
-      </DataProvider>
     </>
   )
 }

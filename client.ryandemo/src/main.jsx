@@ -5,9 +5,6 @@ import "./index.css"
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Home from "./pages/Home.jsx"
-import Contact from "./pages/Contact.jsx"
-import ProfilesPage from "./pages/Profile/ProfilesPage.jsx"
-import ProfilePage from "./pages/Profile/ProfilePage.jsx"
 import NotFoundPage from "./pages/NotFoundPage"
 
 import WomensHealthAssessment from "./pages/WomensHealth/WomensHealthAssessment";
@@ -84,20 +81,6 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <DashboardPage/>,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/profiles",
-        element: <ProfilesPage />,
-        children: [
-          {
-            path: "/profiles/:profileId",
-            element: <ProfilePage />,
-          },
-        ],
       },
     ],
   },
