@@ -730,6 +730,26 @@ Sidebar
 
 /*
 =============== 
+landing pg widget
+===============
+*/
+.landpg-mentalhealth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 140px;
+  padding: 0 20px 40px 20px;
+}
+
+
+
+/*
+=============== 
 Print
 ===============
 */

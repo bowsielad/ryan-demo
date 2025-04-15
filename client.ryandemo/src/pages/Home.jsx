@@ -39,15 +39,11 @@ export default function Home() {
      
              <br />
              <br />
-             <Link to="/lifestylehabits" >lifestyle habits <span className="font-link">&#8594;</span></Link>
-
-             <br />
-             <br />
-             <Link to="/dailyreflections" >daily reflections <span className="font-link">&#8594;</span></Link>
+             <Link to="/dashboard" >my day dashboard <span className="font-link">&#8594;</span></Link>
      
              <br />
              <br />
-             <Link to="/dashboard" >my day dashboard <span className="font-link">&#8594;</span></Link>
+             <Link to="/mentalhealthresults" >mental health results <span className="font-link">&#8594;</span></Link>
      
              <br />
              <br />

@@ -6,8 +6,8 @@ import "./index.css"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Home from "./pages/Home.jsx"
 import Contact from "./pages/Contact.jsx"
-import ProfilesPage from "./pages/MentalHealthResults/ProfilesPage"
-import ProfilePage from "./pages/MentalHealthResults/ProfilePage"
+import ProfilesPage from "./pages/Profile/ProfilesPage.jsx"
+import ProfilePage from "./pages/Profile/ProfilePage.jsx"
 import NotFoundPage from "./pages/NotFoundPage"
 
 import WomensHealthAssessment from "./pages/WomensHealth/WomensHealthAssessment";
@@ -25,6 +25,8 @@ import LifestyleHabitsCompletePage from "./pages/LifestyleHabits/LifestyleHabits
 import DailyReflectionPage from "./pages/DailyReflections/DailyReflectionPage";
 
 import DashboardPage from "./pages/Dashboard/DashboardPage";
+
+import MentalHealthResultsPage from "./pages/MentalHealth/MentalHealthResults/MentalHealthResultsPage";
 
 const router = createBrowserRouter([
   {
@@ -74,6 +76,10 @@ const router = createBrowserRouter([
       {
         path: "/dailyreflections",
         element: <DailyReflectionPage/>,
+      },
+      {
+        path: "/mentalhealthresults",
+        element: <MentalHealthResultsPage/>,
       },
       {
         path: "/dashboard",

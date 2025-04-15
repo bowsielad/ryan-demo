@@ -25,8 +25,12 @@ export const SideBar = () => {
 
     // Define forms based on URL paths
     const formUrls = {
-      "/dailyreflections": "https://forms.office.com/r/TYnVg8kg8W?embed=true",
-      "/bladderbowelform": "https://forms.office.com/r/r0TL3DnUjg?embed=true",
+      "/bladderbowelform": "https://forms.office.com/r/TYnVg8kg8W?embed=true",
+      "/bladderbowelresults": "https://forms.office.com/r/SFBmsdZdww?embed=true",
+      "/healthcheckform": "https://forms.office.com/r/srr5Uxt6ZF?embed=true",
+      "/healthcheckresults": "https://forms.office.com/r/Q5DxkPzkzA?embed=true",
+      "/dashboard": "https://forms.office.com/r/faZmai5vVq?embed=true",
+      "/mentalhealthresults": "https://forms.office.com/r/SXVNTD5iSM?embed=true",
     };
   
     // Get the form URL based on the current path (default to null if not found)

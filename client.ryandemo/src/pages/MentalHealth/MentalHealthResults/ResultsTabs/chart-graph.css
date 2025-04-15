@@ -1,0 +1,152 @@
+/*
+=============== 
+Chart
+===============
+*/
+
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; /* THIS makes all .chart-wrapper boxes align at the top */
+  gap: 8px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+.chart-wrapper {
+  flex: 0 0 calc(33.333% - 10.67px); /* Three per row, accounting for gap */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  box-sizing: border-box;
+  gap: 32px;
+}
+
+.chart-wrapper > div:first-child {
+  flex: 1; /* Let the chart fill the space */
+  max-width: 320px;
+  width: 300px;
+}
+
+.chart-tag{
+  background-color: #F9FAFB; 
+  color: #101828;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 10px;
+  text-align: left;
+  padding: 16px;
+  margin: 0;
+  width: auto;
+  text-align: center;
+}
+.chart-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  align-items: center;
+  flex-direction: row;
+  width: "100%";
+  gap: "8px"; 
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;     
+}
+.chart-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  align-items: center;
+  flex-direction: row;
+  width: "100%";
+  gap: "8px";        
+}
+
+
+.highcharts-container {
+  height: 300px !important;
+  width: 100%;
+}
+
+.highcharts-root {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+
+/*
+=============== 
+circle battery graph
+===============
+*/
+
+
+.circleContainer {
+  max-width: 320px;
+  width: 280px;
+  padding: 0px;
+  margin: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+}
+.circle-overlay {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  animation: circle-overlay-anim 1s forwards;
+  transform-origin: 0 0;
+}
+.circle-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.circle-fill-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  height: 100px;
+  width: 100px;
+  padding: 0;
+  border-radius: 50%;
+  color: black; 
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+
+@keyframes circle-overlay-anim {
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes flashOutline {
+  0% {
+    outline-color: white;
+  }
+  50% {
+    outline-color: var(--outline-color);
+  }
+  100% {
+    outline-color: white;
+  }
+}
