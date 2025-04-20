@@ -97,7 +97,7 @@ function BodyQuarterly() {
           </div>
         ) : circleData.pct >= 67 ? (
           <div>
-            <h3>Fully Powered!</h3>
+            <h3>Peak Performance Mode!</h3>
             <p>
             This area’s result is Fully Charged. This indicates that this area is well-managed and supporting optimal performance.
             </p>
